@@ -9,13 +9,13 @@ except ImportError:
 
 VERSION = "0.0.1"
 
-setup(name="file-convert",
+setup(name="file_translate",
       version=VERSION,
-      description=("Utility to convert the contents of a file by "
+      description=("Utility to translate the contents of a file by "
                    "running a set of regular expressions over it."),
       author="Digicat",
-      packages=["file-convert"],
+      packages=["file_translate"],
       entry_points="""\
       [console_scripts]
-      file-convert = file-convert.convert:main
+      file_translate = file_translate.translate:main
       """)
