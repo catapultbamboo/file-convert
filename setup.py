@@ -15,6 +15,7 @@ setup(name="file_translate",
                    "running a set of regular expressions over it."),
       author="Digicat",
       packages=["file_translate"],
+      data_files=[('file_translate', ['file_translate/*.json'])],
       entry_points="""\
       [console_scripts]
       file_translate = file_translate.translate:main
