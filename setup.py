@@ -7,7 +7,7 @@ except ImportError:
     from distutils.core import setup
 
 
-VERSION = "0.0.1"
+VERSION = "0.0.3"
 
 setup(name="file_translate",
       version=VERSION,
@@ -15,7 +15,7 @@ setup(name="file_translate",
                    "running a set of regular expressions over it."),
       author="Digicat",
       packages=["file_translate"],
-      data_files=[('file_translate', ['file_translate/*.json'])],
+      data_files=[('file_translate', ['file_translate/config.json'])],
       entry_points="""\
       [console_scripts]
       file_translate = file_translate.translate:main
